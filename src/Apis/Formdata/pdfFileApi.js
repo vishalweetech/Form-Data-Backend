@@ -11,7 +11,7 @@ const __dirname = dirname(__filename);
 const sendFileRouter = express.Router();
 
 // Define a route for handling POST requests to "/v2/api/sendfile"
-sendFileRouter.post("/v2/api/sendfile", (req, res) => {
+sendFileRouter.get("/v2/api/sendfile", (req, res) => {
     try {
         // Define the filename and file path
         const filename = "broucher.pdf";
